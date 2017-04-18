@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Swuber.Models.CurrentCustomer>
+
+@{
+    ViewBag.Title = "Walker";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Walker</h2>
+<table>
+    <tr>
+        <th>First Name </th>
+        <th> Last Name </th>
+        <th> Phone </th>
+    </tr>
+    @foreach (var customer in Model)
+    {
+        <tr>
+            <td>@customer.firstNameCC</td>
+            <td>@customer.lastNameCC</td>
+            <td>@customer.phoneCC</td>
+        </tr>
+    }
+</table>
