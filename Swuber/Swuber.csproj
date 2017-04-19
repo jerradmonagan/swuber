@@ -207,9 +207,24 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\about1.png" />
+    <Content Include="Images\about2.png" />
+    <Content Include="Images\about3.png" />
+    <Content Include="Images\adgoeshere.png" />
+    <Content Include="Images\advertisement.png" />
+    <Content Include="Images\advertising.png" />
+    <Content Include="Images\chatlogo.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\instagram.png" />
+    <Content Include="Images\loginlogo.png" />
+    <Content Include="Images\marketing.png" />
+    <Content Include="Images\registerlogo.png" />
     <Content Include="Images\sedan.png" />
+    <Content Include="Images\support.png" />
+    <Content Include="Images\SWOOPCO.jpg" />
     <Content Include="Images\swuber1.jpg" />
     <Content Include="Images\SWUBERBANNER.JPG" />
+    <Content Include="Images\twittericon.png" />
     <Content Include="Images\walking.ico" />
     <Content Include="Images\walking.jpg" />
     <Content Include="Models\Swuber.Context.tt">
@@ -272,6 +287,7 @@
     <Content Include="Views\CurrentCustomer\Walker.cshtml" />
     <Content Include="Views\Home\Chat.cshtml" />
     <Content Include="GMaps.html" />
+    <Content Include="Views\Home\ChatWalker.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

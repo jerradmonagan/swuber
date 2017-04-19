@@ -30,5 +30,9 @@ namespace Swuber.Controllers
         {
             return View();
         }
+        public ActionResult ChatWalker()
+        {
+            return View();
+        }
     }
 }
