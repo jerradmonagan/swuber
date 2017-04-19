@@ -23,7 +23,7 @@
         $(function () {
             // Reference the auto-generated proxy for the hub.
             var chat = $.connection.chatHub;
-            var driver = "(driver)";
+            var str = "(driver)";
             // Create a function that the hub can call back to display messages.
             chat.client.addNewMessageToPage = function (name, message) {
                 // Add the message to the page.
@@ -31,7 +31,7 @@
                     + '</strong>: ' + htmlEncode(message) + '</li>');
             };
             // Get the user name and store it to prepend to messages.
-            $('#displayname').val(prompt('Enter your name:', '(driver)'));
+            $('#displayname').val(prompt('Enter your name:'));
 //lets hard code whether walker and put a comma.
 //they fill in their name from there.
             // Set initial focus to message input box.
@@ -40,7 +40,7 @@
             $.connection.hub.start().done(function () {
                 $('#sendmessage').click(function () {
                     // Call the Send method on the hub.
-                    chat.server.send($('#displayname').val(), $('#message').val());
+                    chat.server.send($('#displayname').val(),$('#message').val());
                     // Clear text box and reset focus for next comment.
                     $('#message').val('').focus();
                 });

@@ -15,8 +15,8 @@
     @Session["LastName"].ToString()    </text>
 } </fieldset>  
 
-<h2>@Html.ActionLink("(walker)Find a Ride", "Walker", "CurrentCustomer")</h2>
-<h2>@Html.ActionLink("(driver)Find a Parking Spot", "Driver", "CurrentCustomer")</h2>
+<h2>@Html.ActionLink("(walker)Find a Ride", "Chat", "Home")</h2>
+<h2>@Html.ActionLink("(driver)Find a Parking Spot", "Chat", "Home")</h2>
 <h2><a href="\GMaps.html">map</a></h2>
 
 <div id="map" style="width:100%;height:400px;"></div>
@@ -32,19 +32,22 @@
         var marker = new google.maps.Marker({
             position: myCenter, icon: {
                 url: "/images/walking.jpg",
-                scaledSize: new google.maps.Size(40, 40)
+                scaledSize: new google.maps.Size(40, 40),
+                title:'Bob'
             },
         });
         var marker2 = new google.maps.Marker({
             position: myCar, icon: {
                 url: "/images/sedan.png",
-                scaledSize: new google.maps.Size(40, 40)
+                scaledSize: new google.maps.Size(40, 40),
+                title: 'Alice'
             },
         });
         var marker3 = new google.maps.Marker({
             position: myCar2, icon: {
                 url: "/images/sedan.png",
-                scaledSize: new google.maps.Size(40, 40)
+                scaledSize: new google.maps.Size(40, 40),
+                title: 'Charlie'
             },
         });
         marker.setMap(map);
