@@ -206,8 +206,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\sedan.png" />
     <Content Include="Images\swuber1.jpg" />
     <Content Include="Images\SWUBERBANNER.JPG" />
+    <Content Include="Images\walking.ico" />
+    <Content Include="Images\walking.jpg" />
     <Content Include="Models\Swuber.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Swuber.edmx</DependentUpon>
